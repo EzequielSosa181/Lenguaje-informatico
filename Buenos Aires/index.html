@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Buenos Aires Turismo | Inicio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO Y NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+
+                <a class="navbar-brand" href="index.html">
+                    Buenos Aires Turismo
+                </a>
+
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-expanded="false"
+                    aria-label="Abrir menú">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                   <ul class="navbar-nav ms-auto">
+
+                          <li class="nav-item">
+                             <a class="nav-link active" href="index.html">Inicio</a>
+                             </li>
+
+                             <li class="nav-item">
+                              <a class="nav-link" href="#destinos">Explora destinos</a>
+                             </li>
+
+                                <li class="nav-item">
+                                 <a class="nav-link" href="ciudad.html">La ciudad</a>
+                                 </li>
+
+                                 <li class="nav-item">
+                                 <a class="nav-link" href="#lugares">Lugares</a>
+                                 </li>
+
+                                 <li class="nav-item">
+                                 <a class="nav-link" href="contacto.html">Contacto</a>
+                                 </li>
+
+                         </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- PORTADA PRINCIPAL -->
+        <section class="portada">
+
+            <div class="portada-imagen">
+                <img src="img/obelisco.webp" alt="Obelisco de Buenos Aires">
+            </div>
+
+            <div class="portada-texto">
+                <span class="badge text-bg-warning">Capital de Argentina</span>
+
+                <h1>Descubrí Buenos Aires</h1>
+
+                <p>
+                    Historia, cultura, arquitectura y experiencias
+                    únicas en una de las ciudades más importantes
+                    de Sudamérica.
+                </p>
+
+                <a href="lugares.html" class="btn btn-primary">
+                    Explorar destinos
+                </a>
+            </div>
+
+        </section>
+
+        <!-- PRESENTACIÓN -->
+        <section class="presentacion container">
+
+            <h2>Bienvenidos a Buenos Aires</h2>
+
+            <p>
+                Buenos Aires es la capital de Argentina y una de las ciudades
+                más importantes de Sudamérica. Se caracteriza por su diversidad
+                cultural, su arquitectura, sus espacios verdes y su intensa
+                vida artística y gastronómica.
+            </p>
+
+            <p>
+                Desde sus barrios históricos hasta sus modernos paseos,
+                la ciudad ofrece una gran variedad de lugares y experiencias
+                para descubrir.
+            </p>
+
+        </section>
+
+        <!-- DESTINOS DESTACADOS -->
+        <section class="destinos container"  id="destinos">
+
+            <h2>Destinos destacados</h2>
+
+            <p class="descripcion">
+                Conocé algunos de los lugares más representativos
+                de la ciudad.
+            </p>
+
+            <div class="row g-4">
+
+                <!-- OBELISCO -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card tarjeta h-100">
+
+                        <img src="img/obelisco.webp"
+                            class="card-img-top"
+                            alt="Obelisco de Buenos Aires">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Obelisco</h3>
+
+                            <p class="card-text">
+                                Monumento histórico inaugurado en 1936,
+                                ubicado en la Avenida 9 de Julio.
+                            </p>
+
+                            <a href="https://turismo.buenosaires.gob.ar/es/otros-establecimientos/obelisco"
+                                target="_blank" rel="noopener noreferrer"
+                                  class="btn btn-outline-primary">
+                                  Conocer más
+                            </a>
+                        </div>
+
+                    </article>
+                </div>
+
+                <!-- LA BOCA -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card tarjeta h-100">
+
+                        <img src="img/la-boca.jpg"
+                            class="card-img-top"
+                            alt="Barrio de La Boca">
+
+                        <div class="card-body">
+                            <h3 class="card-title">La Boca</h3>
+
+                            <p class="card-text">
+                                Un barrio conocido por sus calles coloridas,
+                                su arte y su tradición cultural.
+                            </p>
+
+                            <a href="https://turismo.buenosaires.gob.ar/es/turismo-en-barrios/barrio-la-boca" 
+                                  target="_blank" rel="noopener noreferrer"
+                                  class="btn btn-outline-primary">
+                                  Conocer más
+                            </a>
+                        </div>
+
+                    </article>
+                </div>
+
+                <!-- TEATRO COLÓN -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card tarjeta h-100">
+
+                        <img src="img/teatro-colon.jpg"
+                            class="card-img-top"
+                            alt="Teatro Colón">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Teatro Colón</h3>
+
+                            <p class="card-text">
+                                Uno de los teatros más importantes
+                                y reconocidos del mundo.
+                            </p>
+
+                            <a 
+                                href="https://teatrocolon.org.ar/"
+                                target="_blank" rel="noopener noreferrer"
+                                  class="btn btn-outline-primary">
+                                  Conocer más
+                            </a>
+                        </div>
+
+                    </article>
+                </div>
+
+                <!-- PUERTO MADERO -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card tarjeta h-100">
+
+                        <img src="img/puerto-madero.webp"
+                            class="card-img-top"
+                            alt="Puerto Madero">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Puerto Madero</h3>
+
+                            <p class="card-text">
+                                Un barrio moderno que combina arquitectura,
+                                gastronomía y paseos junto al río.
+                            </p>
+
+                            <a href="https://turismo.buenosaires.gob.ar/es/recorrido/puerto-madero" 
+                              target="_blank" rel="noopener noreferrer"
+                                  class="btn btn-outline-primary">
+                                  Conocer más
+                            </a>
+                        </div>
+
+                    </article>
+                </div>
+
+                <!-- PLANETARIO -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card tarjeta h-100">
+
+                        <img src="img/planetario.webp"
+                            class="card-img-top"
+                            alt="Planetario Galileo Galilei">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Planetario</h3>
+
+                            <p class="card-text">
+                                Un centro de educación científica
+                                ubicado en el barrio de Palermo.
+                            </p>
+
+                            <a href="https://turismo.buenosaires.gob.ar/es/otros-establecimientos/planetario-galileo-galilei"
+                                target="_blank" rel="noopener noreferrer"
+                                  class="btn btn-outline-primary">
+                                  Conocer más
+                            </a>
+                        </div>
+
+                    </article>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CULTURA -->
+        <section class="seccion-cultura">
+
+            <div class="container">
+
+                <h2>Una ciudad llena de cultura</h2>
+
+                <p>
+                    La identidad cultural argentina es un mosaico de influencias
+                    indígenas, europeas y contemporáneas.
+                </p>
+
+                <p>
+                    Las comunidades originarias, la colonización española
+                    y la inmigración europea contribuyeron a formar
+                    la diversidad cultural del país.
+                </p>
+
+                <a href="ciudad.html" class="btn btn-light">
+                    Descubrir nuestra cultura
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- EXPERIENCIAS -->
+        <section class="experiencias container" id="lugares">
+
+            <h2>Experiencias para disfrutar</h2>
+
+            <div class="contenedor-experiencias">
+
+                <article>
+                    <h3>Gastronomía</h3>
+
+                    <p>
+                        Descubrí los sabores argentinos, desde el asado
+                        hasta las tradicionales empanadas.
+                    </p>
+
+                    <a href="ciudad.html">Ver gastronomía</a>
+                </article>
+
+                <article>
+                    <h3>Actividades culturales</h3>
+
+                    <p>
+                        Disfrutá del tango, los teatros, los museos
+                        y los festivales de la ciudad.
+                    </p>
+
+                    <a href="ciudad.html">Ver actividades</a>
+                </article>
+
+                <article>
+                    <h3>Naturaleza</h3>
+
+                    <p>
+                        Explorá parques, jardines y espacios verdes
+                        para disfrutar al aire libre.
+                    </p>
+
+                    <a href="ciudad.html">Explorar naturaleza</a>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <h2>Buenos Aires Turismo</h2>
+
+        <p>Descubrí, recorré y disfrutá Buenos Aires.</p>
+
+        <p>&copy; 2026 Buenos Aires Turismo</p>
+
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

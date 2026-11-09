@@ -1,0 +1,406 @@
+
+/* =========================================
+   VARIABLES DE COLOR
+========================================= */
+
+:root {
+    --azul-principal: #1769aa;
+    --celeste: #75aadb;
+    --amarillo: #f6c344;
+    --fondo: #f2f8fc;
+    --blanco: #ffffff;
+    --texto: #333333;
+}
+
+
+/* =========================================
+   ESTILOS GENERALES
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--fondo);
+    color: var(--texto);
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+h2 {
+    color: var(--azul-principal);
+    font-size: 30px;
+    border-bottom: 3px solid var(--celeste);
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    color: var(--texto);
+}
+
+
+/* =========================================
+   HEADER Y NAVEGACIÓN
+========================================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    background-color: var(--azul-principal);
+    padding: 15px 0;
+    border-bottom: 4px solid var(--amarillo);
+}
+
+/* Nombre del sitio */
+
+.navbar.navbar-dark .navbar-brand {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Nombres de las páginas */
+
+.navbar.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+    opacity: 1;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.navbar.navbar-dark .navbar-nav .nav-link:hover,
+.navbar.navbar-dark .navbar-nav .nav-link.active {
+    background-color: var(--celeste);
+    color: #ffffff;
+}
+
+
+/* =========================================
+   POSICIONAMIENTO Y PORTADA
+========================================= */
+
+.portada {
+    position: relative;
+    height: 550px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    padding: 0;
+    background-color: var(--azul-principal);
+}
+
+.portada-imagen {
+    width: 100%;
+    height: 100%;
+}
+
+.portada-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Texto superpuesto sobre la imagen */
+
+.portada-texto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 10%;
+    color: var(--blanco);
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.15)
+    );
+}
+
+.portada-texto h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 15px 0;
+    color: var(--blanco);
+}
+
+.portada-texto p {
+    max-width: 550px;
+    font-size: 20px;
+}
+
+.portada-texto .btn {
+    margin-top: 15px;
+}
+
+
+/* =========================================
+   PRESENTACIÓN
+========================================= */
+
+.presentacion {
+    background-color: var(--blanco);
+    padding: 35px;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    border-top: 5px solid var(--celeste);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   DESTINOS Y CARDS DE BOOTSTRAP
+========================================= */
+
+.destinos {
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+
+.descripcion {
+    margin-bottom: 30px;
+}
+
+/* Personalización de las tarjetas */
+
+.tarjeta {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--blanco);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta .card-img-top {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.tarjeta .card-body {
+    padding: 22px;
+}
+
+.tarjeta .card-title {
+    color: var(--azul-principal);
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.tarjeta .card-text {
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: var(--azul-principal);
+    border-color: var(--azul-principal);
+}
+
+.btn-primary:hover {
+    background-color: #104d80;
+    border-color: #104d80;
+}
+
+.btn-outline-primary {
+    color: var(--azul-principal);
+    border-color: var(--azul-principal);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--azul-principal);
+    border-color: var(--azul-principal);
+}
+
+
+/* =========================================
+   SECCIÓN CULTURA
+========================================= */
+
+.seccion-cultura {
+    background-color: var(--azul-principal);
+    color: var(--blanco);
+    padding: 55px 20px;
+    margin: 40px 0;
+}
+
+.seccion-cultura h2 {
+    color: var(--blanco);
+    border-bottom-color: var(--amarillo);
+}
+
+.seccion-cultura p {
+    max-width: 850px;
+}
+
+
+/* =========================================
+   FLEXBOX: EXPERIENCIAS
+========================================= */
+
+.experiencias {
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+
+/* Las tarjetas se acomodan automáticamente */
+
+.contenedor-experiencias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+/* flex: 1 1 permite adaptar el ancho */
+
+.contenedor-experiencias article {
+    flex: 1 1 240px;
+    background-color: var(--blanco);
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 5px solid var(--celeste);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.contenedor-experiencias h3 {
+    color: var(--azul-principal);
+    font-size: 22px;
+}
+
+.contenedor-experiencias a {
+    color: var(--azul-principal);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contenedor-experiencias a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background-color: var(--azul-principal);
+    color: var(--blanco);
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 5px solid var(--amarillo);
+}
+
+footer h2 {
+    color: var(--blanco);
+    border: none;
+    font-size: 25px;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+
+/* =========================================
+   RESPONSIVE: TABLETS Y CELULARES
+========================================= */
+
+@media (max-width: 991px) {
+
+    .navbar-nav {
+        gap: 5px;
+        padding-top: 15px;
+    }
+
+    .portada {
+        height: 450px;
+    }
+
+    .portada-texto {
+        padding: 35px;
+    }
+
+    .portada-texto h1 {
+        font-size: 38px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .portada {
+        height: 400px;
+    }
+
+    .portada-texto {
+        padding: 25px;
+    }
+
+    .portada-texto h1 {
+        font-size: 32px;
+    }
+
+    .portada-texto p {
+        font-size: 16px;
+    }
+
+    .presentacion {
+        padding: 22px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .tarjeta .card-img-top {
+        height: 200px;
+    }
+
+}
+/* CORRECCIÓN FORZADA DEL ENCABEZADO */
+
+header .navbar .navbar-brand,
+header .navbar .navbar-nav .nav-link {
+    color: #ffffff !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+header .navbar .navbar-brand:hover,
+header .navbar .navbar-nav .nav-link:hover {
+    color: #ffffff !important;
+}
+
+header .navbar {
+    background-color: #1769aa !important;
+}
+
+header .navbar .navbar-toggler {
+    border-color: #ffffff;
+}
+
+header .navbar .navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
